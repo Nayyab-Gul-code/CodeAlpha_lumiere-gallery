@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumière — Image Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Lumière Nayyab</div>
+      <nav class="filter-nav">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">A Visual Journey</span>
+      <h1>Curated<br/><em>Photography</em></h1>
+      <p>Explore our handpicked collection of stunning imagery</p>
+    </div>
+    <div class="hero-accent"></div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <main class="gallery-wrapper">
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature" data-index="0">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain Peaks" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Mountain Peaks</h3>
+              <p>Swiss Alps, 2024</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="architecture" data-index="1">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Glass Tower" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Architecture</span>
+              <h3>Glass Tower</h3>
+              <p>Chicago, Illinois</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract" data-index="2">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&q=80" alt="Color Burst" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Abstract</span>
+              <h3>Color Burst</h3>
+              <p>Digital Art Series</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="nature" data-index="3">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80" alt="Golden Valley" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Golden Valley</h3>
+              <p>Yosemite, California</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+   
+
+      <div class="gallery-item" data-category="abstract" data-index="5">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Geometric Flow" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Abstract</span>
+              <h3>Geometric Flow</h3>
+              <p>Digital Series Vol.2</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="nature" data-index="6">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80" alt="Forest Light" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Forest Light</h3>
+              <p>Black Forest, Germany</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="architecture" data-index="7">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80" alt="Minimalist Interior" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Architecture</span>
+              <h3>Minimalist Interior</h3>
+              <p>Tokyo Residence</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract" data-index="8">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80" alt="Liquid Dreams" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Abstract</span>
+              <h3>Liquid Dreams</h3>
+              <p>Macro Photography</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="portrait" data-index="9">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=800&q=80" alt="Urban Soul" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Portrait</span>
+              <h3>Urban Soul</h3>
+              <p>Street Photography</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="architecture" data-index="10">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?w=800&q=80" alt="Spiral Staircase" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Architecture</span>
+              <h3>Spiral Staircase</h3>
+              <p>Vatican Museums</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="nature" data-index="11">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80" alt="Ocean Waves" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Ocean Waves</h3>
+              <p>Pacific Coast, Oregon</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Starry Sky -->
+      <div class="gallery-item" data-category="nature" data-index="12">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80" alt="Starry Night" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Starry Night</h3>
+              <p>Night Sky, Alaska</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sunset Sky -->
+      <div class="gallery-item" data-category="nature" data-index="13">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=800&q=80" alt="Sunset Glow" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Sunset Glow</h3>
+              <p>Coastal Paradise</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clouds -->
+      <div class="gallery-item" data-category="nature" data-index="14">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Cloud Formation" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Cloud Formation</h3>
+              <p>Sky Perspective</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desert -->
+      <div class="gallery-item" data-category="nature" data-index="15">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" alt="Desert Dunes" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Desert Dunes</h3>
+              <p>Sahara, Morocco</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canyon -->
+      <div class="gallery-item" data-category="nature" data-index="16">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Grand Canyon" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Grand Canyon</h3>
+              <p>Arizona, USA</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forest Path -->
+      <div class="gallery-item" data-category="nature" data-index="17">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Forest Path" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Forest Path</h3>
+              <p>Pine Wilderness</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mountain Lake -->
+      <div class="gallery-item" data-category="nature" data-index="18">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain Lake" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Mountain Lake</h3>
+              <p>Alpine Reflection</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waterfall -->
+      <div class="gallery-item" data-category="nature" data-index="19">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Waterfall Cascade" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Waterfall Cascade</h3>
+              <p>Tropical Paradise</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+     
+
+      <!-- Laptop Workspace -->
+      <div class="gallery-item" data-category="architecture" data-index="21">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" alt="Laptop Workspace" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Architecture</span>
+              <h3>Laptop Workspace</h3>
+              <p>Creative Studio</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Coding -->
+      <div class="gallery-item" data-category="abstract" data-index="22">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" alt="Code On Screen" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Abstract</span>
+              <h3>Code On Screen</h3>
+              <p>Programming</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Workspace Setup -->
+      <div class="gallery-item" data-category="architecture" data-index="24">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&q=80" alt="Modern Desk Setup" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Architecture</span>
+              <h3>Modern Desk Setup</h3>
+              <p>Minimalist Office</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+   
+
+      <!-- Rainbow Over Field -->
+      <div class="gallery-item" data-category="nature" data-index="26">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80" alt="Rainbow Field" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Rainbow Field</h3>
+              <p>After the Storm</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Misty Forest -->
+      <div class="gallery-item" data-category="nature" data-index="29">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Misty Forest" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Misty Forest</h3>
+              <p>Morning Fog</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snow Landscape -->
+      <div class="gallery-item" data-category="nature" data-index="30">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Snow Landscape" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Snow Landscape</h3>
+              <p>Winter Wonderland</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ocean Sunset -->
+      <div class="gallery-item" data-category="nature" data-index="31">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" alt="Ocean Sunset" loading="lazy"/>
+          <div class="img-overlay">
+            <div class="overlay-info">
+              <span class="overlay-tag">Nature</span>
+              <h3>Ocean Sunset</h3>
+              <p>Golden Hour Beach</p>
+            </div>
+            <button class="zoom-btn" aria-label="View full size">&#x26F6;</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+      <div class="lb-img-container">
+        <img src="" alt="" id="lbImage" />
+        <div class="lb-loader" id="lbLoader"></div>
+      </div>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+      <div class="lb-caption" id="lbCaption">
+        <span class="lb-tag" id="lbTag"></span>
+        <h3 id="lbTitle"></h3>
+        <p id="lbSub"></p>
+        <span class="lb-counter" id="lbCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter CSS Effect Toggle -->
+  <div class="fx-bar">
+    <span class="fx-label">FX</span>
+    <button class="fx-btn active" data-fx="none" title="Original">&#9675;</button>
+    <button class="fx-btn" data-fx="grayscale" title="Grayscale">&#11052;</button>
+    <button class="fx-btn" data-fx="sepia" title="Sepia">&#9788;</button>
+    <button class="fx-btn" data-fx="saturate" title="Vivid">&#9670;</button>
+    <button class="fx-btn" data-fx="invert" title="Invert">&#9674;</button>
+  </div>
+
+  <footer class="site-footer">
+    <p>Lumière Gallery &copy; 2024 &mdash; All images courtesy of <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
